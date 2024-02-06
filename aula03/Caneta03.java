@@ -1,30 +1,29 @@
 public class Caneta03 {
-    String modelo;
-    String cor;
-    float ponta;
-    int carga;
-    boolean tampada;
-    void status() {
+    public String modelo;
+    public String cor;
+    public float ponta;
+    protected int carga;
+    protected boolean tampada;
+    public void status() {
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Uma caneta " + this.cor);
         System.out.println("Ponta: " + this.ponta);
         System.out.println("Carga " + this.carga);
         System.out.println("Está tampada? " + this.tampada);
     }
-    void rabiscar(){
+    public void rabiscar(){
         if (this.tampada == true){
             System.out.println("ERRO! não posso rabiscar");
         } else {
             System.out.println("Estou rabiscando");
         }
     }
-    void tampar() {
+    protected void tampar() {
         this.tampada = true;
     }
-    void destampar() {
+    protected void destampar() {
         this.tampada = false;
 
     }
 }
-//  javac Aula02.java Caneta.java
-//  java Aula02
+// javac Aula03.java Caneta03.java && java Aula03
