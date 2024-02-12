@@ -7,9 +7,14 @@ public class Aula07 {
         l[3] = new Lutador("Dead Code", "Austrália", 31, 1.75f, 81.9f, 11, 2, 1);
         l[4] = new Lutador("UFOCobol", "Brasil", 31, 1.75f, 119.9f, 11, 2, 1);
         l[5] = new Lutador("Nerdaart", "EUA", 31, 1.75f, 105.9f, 11, 2, 1);
-        l[3].status();
+        
+Luta UEC01 = new Luta();
+UEC01.marcarLuta(l[1], l[1]);
+UEC01.lutar();
+l[0].status();
+l[1].status();
     }
 }
 // javac Aula07.java Controlador.java Lutador.java
 //java Aula07
-//javac Aula07.java Controlador.java Lutador.java && java Aula07
+//javac Aula07.java Controlador.java Lutador.java Luta.java && java Aula07
