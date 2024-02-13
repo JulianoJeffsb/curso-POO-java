@@ -1,8 +1,8 @@
 public class Caneta 
 {
-    private String modelo;
-    private float ponta;
-    private String cor;
+    String modelo;
+    float ponta;
+    String cor;
     private boolean tampada;
 
     public Caneta(String m, String c, Float p) {  // este é o Metodo Contrutor
@@ -40,6 +40,11 @@ public class Caneta
         System.out.println("Ponta: " + this.ponta);
         System.out.println("Cor:" + this.cor);
         System.out.println("Tampada: " + this.tampada);
+    }
+
+    public void rabiscar() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'rabiscar'");
     } 
 
 }
