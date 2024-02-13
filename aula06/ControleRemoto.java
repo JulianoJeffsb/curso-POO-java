@@ -35,6 +35,7 @@ public class ControleRemoto implements Controlador {
         this.tocando = tocando;
     }
 
+    
     @Override
     public void ligar() {
         this.setLigado(true);
