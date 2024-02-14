@@ -1,5 +1,3 @@
-package aula10;
-
 public class Pessoa 
 {
     private String nome;
@@ -12,7 +10,7 @@ public class Pessoa
     }
 
     public String getNome() {
-        return nome;
+        return "Nome: " + nome + ", Sexo: " + sexo + ", Idade: " + idade;
     }
 
     public void setNome(String nome) {
@@ -35,6 +33,11 @@ public class Pessoa
         this.sexo = sexo;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Pessoa [nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + "]";
+    }
+
+      
 
 }
