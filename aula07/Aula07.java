@@ -9,7 +9,7 @@ public class Aula07 {
         l[5] = new Lutador("Nerdaart", "EUA", 31, 1.75f, 105.9f, 11, 2, 1);
         
 Luta UEC01 = new Luta();
-UEC01.marcarLuta(l[1], l[1]);
+UEC01.marcarLuta(l[0], l[1]);
 UEC01.lutar();
 l[0].status();
 l[1].status();
