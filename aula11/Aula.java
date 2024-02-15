@@ -22,6 +22,9 @@ public class Aula {
         pr1.setNome("Jose");
         System.out.println(pr1.toString());
         System.out.println(pr1.receberAumento(100.01f));
+        Tecnico t1 = new Tecnico();
+        t1.setNome("Pedro");
+        t1.pagarMensalidade();
     }
 
 }
