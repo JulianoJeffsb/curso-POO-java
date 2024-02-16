@@ -5,3 +5,7 @@ public class Aula06 {
         c.abrirMenu();
     }
 }
+
+
+
+//javac Aula06.java Controlador.java ControleRemoto.java  

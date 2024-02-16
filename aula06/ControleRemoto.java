@@ -1,5 +1,4 @@
-public class ControleRemoto implements Controlador {
-    
+public class ControleRemoto {
     // Atributos
     private int Volume;
     private boolean ligado;
