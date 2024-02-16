@@ -4,7 +4,7 @@ public class Livro implements Publicacao
     private String autor;
     private int totPaginas;
     private int pagAtual;
-    private boolean abreto;
+    private boolean aberto;
     private Pessoa leitor;
 
     
@@ -12,7 +12,7 @@ public class Livro implements Publicacao
     
     public String detalhes() {
         return "Livro [titulo=" + titulo + "\n, autor=" + autor + "\n, totPaginas=" + totPaginas + "\n, pagAtual=" + pagAtual
-                + "\n, abreto=" + abreto + "\n, leitor=" + leitor.getNome() + "\n, leitor=" + leitor.getSexo() +"]";
+                + "\n, aberto=" + aberto + "\n, leitor=" + leitor.getNome() + "\n, leitor=" + leitor.getSexo() +"]";
     }
 
     
@@ -21,7 +21,7 @@ public class Livro implements Publicacao
         this.titulo = titulo;
         this.autor = autor;
         this.totPaginas = totPaginas;
-        this.abreto = false;
+        this.aberto = false;
         this.pagAtual = 0;
         this.leitor = leitor;
     }
@@ -59,11 +59,11 @@ public class Livro implements Publicacao
     }
 
     public boolean isAbreto() {
-        return abreto;
+        return aberto;
     }
 
     public void setAbreto(boolean abreto) {
-        this.abreto = abreto;
+        this.aberto = abreto;
     }
 
     public Pessoa getLeitor() {
@@ -78,13 +78,13 @@ public class Livro implements Publicacao
 
     @Override
     public void abrir() {
-        this.abreto = true;
+        this.aberto = true;
         
     }
 
     @Override
     public void fechar() {
-        this.abreto = false;
+        this.aberto = false;
         
     }
 
