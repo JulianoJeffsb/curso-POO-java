@@ -1,0 +1,10 @@
+public class exchange {
+
+    private final double cotacaoDlar = 5.5;
+    private final double iof = 0,0586;
+    private final double taxaOperacaoEmPercentual = 1;
+
+    @Supperesswar
+
+
+}
